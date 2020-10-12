@@ -1,0 +1,42 @@
+@import 'header.vars';
+
+* {box-sizing: border-box;}
+
+.header {
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    height: var(--spectrum-global-dimension-size-700, 56px);
+}
+
+::slotted(*) {
+    margin-left: var(--spectrum-actionbuttongroup-text-button-gap-x, var(--spectrum-global-dimension-size-100));
+}
+
+::slotted(*:last-child) {
+    margin-right: var(--spectrum-global-dimension-size-400, 32px);
+    margin-left: var(--spectrum-global-dimension-size-400, 32px);
+}
+
+::slotted(sp-tabs) {
+    align-self: flex-end;
+}
+
+::slotted(*:first-child) {
+    margin-left: var(--spectrum-global-dimension-size-400, 32px);
+    margin-right: var(--spectrum-global-dimension-size-200, 16px);
+}
+
+sp-container {
+    width: 100%;
+}
+
+.spacer {
+    flex: 1;
+}
+
+
+
+
+
