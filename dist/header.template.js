@@ -1,7 +1,6 @@
 import { html } from 'lit-element';
 export function standardTemplate() {
     return html `
-   <sp-container background="gray-200">
       <div class="header">
          <slot name="home"></slot>
          <slot name="tabs"></slot>
@@ -10,8 +9,7 @@ export function standardTemplate() {
          <div class="spacer"></div>
          <slot name="action"></slot>
          <slot name="avatar"></slot>
-      </div>
-   </sp-container>`;
+      </div>`;
 }
 export function smalldesktopTemplate() {
     return html `

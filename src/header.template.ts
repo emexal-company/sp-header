@@ -1,13 +1,9 @@
 import { html } from 'lit-element';
-import { classMap } from 'lit-html/directives/class-map.js';
-import { styleMap } from 'lit-html/directives/style-map.js';
 
 import { Header } from './header.component';
-import '@spectrum/sp-container';
 
 export  function standardTemplate(this: Header) {
 return html`
-   <sp-container background="gray-200">
       <div class="header">
          <slot name="home"></slot>
          <slot name="tabs"></slot>
@@ -16,8 +12,7 @@ return html`
          <div class="spacer"></div>
          <slot name="action"></slot>
          <slot name="avatar"></slot>
-      </div>
-   </sp-container>`;
+      </div>`;
 }
 
 export  function smalldesktopTemplate(this: Header) {

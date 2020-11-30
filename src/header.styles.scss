@@ -8,6 +8,7 @@
     display: inline-flex;
     align-items: center;
     height: var(--spectrum-global-dimension-size-700, 56px);
+    border-bottom: 1px solid var(--spectrum-global-color-gray-300);
 }
 
 ::slotted(*) {
